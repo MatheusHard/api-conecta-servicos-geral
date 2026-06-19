@@ -16,7 +16,7 @@ public class SwaggerConfig {
                 .info(new Info()
                         .title("Api Conecta Serviços Geral")
                         .description(
-                                "Microsserviço responsável por conectar os serviços da empresa Api Conecta Serviços Geral")
+                                "Api responsável por conectar os serviços da empresa Api Conecta Serviços Geral")
                         .version("1.0.0")
                         .contact(new Contact()
                                 .name("Matheus Hardman")
