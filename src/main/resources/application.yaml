@@ -1,0 +1,55 @@
+spring:
+  application:
+    name: api-conecta-servicos-geral
+
+  datasource:
+    url: jdbc:mysql://square-cloud-db-0b07c3f984959b1.squareweb.app:7205/db_conecta_servicos_geral_homolog
+    username: squarecloud
+    password: FFFFGGGGGGGPO
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      max-lifetime: 300000
+      keepalive-time: 60000
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+  mail:
+    host: smtp-relay.brevo.com
+    port: 587
+    username: matheushard2013@gmail.com
+    password: f9tKpFLxP
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+
+security:
+  config:
+    prefix: Bearer
+    key: SECRET_KEY
+    expiration: 3600000
+
+jwt:
+  secret: DDDFGFDSKKMMMMMMSAKALSMALDAGHGFJDLEEKEMDSSDADNFGBVVCC
+  expiration: 3600000
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+        web: DEBUG
+
+server:
+  port: ${PORT:80}
+  address: 0.0.0.0
