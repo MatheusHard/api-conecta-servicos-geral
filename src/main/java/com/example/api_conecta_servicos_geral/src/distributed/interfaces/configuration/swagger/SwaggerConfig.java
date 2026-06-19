@@ -14,12 +14,12 @@ public class SwaggerConfig {
 
         return new OpenAPI()
                 .info(new Info()
-                        .title("Photo Service API")
-                        .description("Microsserviço responsável pelo armazenamento de imagens")
+                        .title("Api Conecta Serviços Geral")
+                        .description(
+                                "Microsserviço responsável por conectar os serviços da empresa Api Conecta Serviços Geral")
                         .version("1.0.0")
                         .contact(new Contact()
                                 .name("Matheus Hardman")
                                 .email("[EMAIL_ADDRESS]")));
     }
 }
-
